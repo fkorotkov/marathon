@@ -1,7 +1,7 @@
 task:
   name: Tests
   container:
-    dockerfile: cirrusci/android-sdk:29
+    image: cirrusci/android-sdk:29
     cpu: 4
     memory: 10G
   tests_script: ./gradlew clean test jacocoTestReport
